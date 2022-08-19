@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prj_style.css">
+    <link href="https://fonts.google.com/specimen/Overpass" rel="stylesheet">
+    <title>rating</title>
+</head>
+
+<body>
+    <div class="card">
+        <img class="kl" src="../images/illustration-thank-you.svg" alt="...">
+        <br><br>
+        <button id="span"></button>
+        <script>
+            var span=document.getElementById('span')
+            const rate = localStorage.getItem('num')
+            span.innerHTML=`you selected ${rate} out of 5`
+        </script>
+        <br>
+        <div class="num_container">
+            <h3 id="h3">Thank you !</h3>
+            <p id="pp">We appreciate you taking time to give a rating.
+                if you ever need more support, don't hesitate to get in touch!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
